@@ -38,7 +38,7 @@ Rscript -e 'remotes::install_github("alejanner/TensorPLS", upgrade = "never")'
 Run the analyses:
 
 ```bash
-cd ~/TensorPLS_reproduction/TensorPLS_paper_reproducibility
+cd ~/TensorPLS_reproduction/tensorPLSPaper/
 chmod +x run_all.sh
 ./run_all.sh
 ```
