@@ -20,7 +20,7 @@ The directory structure should be:
 ```text
 TensorPLS_reproduction/
 ├── TensorPLS/
-└── TensorPLS_paper_reproducibility/
+└── tensorPLSPaper/
     ├── run_all.sh
     ├── 01_prepare_GSE68310.R
     ├── 02_analyze_GSE68310.R
