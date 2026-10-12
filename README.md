@@ -12,7 +12,7 @@ Clone **both repositories into the same parent directory**:
 mkdir -p ~/TensorPLS_reproduction
 cd ~/TensorPLS_reproduction
 git clone https://github.com/alejanner/TensorPLS.git
-git clone https://github.com/alejanner/TensorPLS_paper_reproducibility.git
+git clone https://github.com/alejanner/tensorPLSPaper.git
 ```
 
 The directory structure should be:
