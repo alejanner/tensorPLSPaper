@@ -21,7 +21,7 @@ stopifnot(identical(dim(X), c(109L, 47162L, 4L)),
 
 seed <- 123L
 components <- 1:10
-strategy <- "VIP2D_intersect_VIP3Dmodel2"
+strategy <- "VIP2D_intersect_M2"
 threshold <- 99
 tucker_control <- list(
   ranks = c(4L, 4L, 3L), tolerance = 1e-6, max_iter = 2000L,
@@ -89,7 +89,8 @@ if (nzchar(reference_cv) && file.exists(reference_cv)) {
 
 # Full-cohort model: descriptive interpretation, not predictive validation.
 development <- TensorPLS::tune_tensorpls_components(
-  X = X, Y = Y, ncomp = components, feature_strategy = "Original",
+  X = X, Y = Y, ncomp = components, feature_strategy = strategy,
+  vip_thr = threshold,
   cv_folds = 5L, folds = folds$outer, seed = seed,
   imputation = "tucker", tucker_control = tucker_control,
   input_provenance = "unknown", selection_metric = "Q2Y", verbose = TRUE

@@ -3,7 +3,7 @@ config <- list(
   seed = 123L,
   ncomp = 1:10,
   inner_folds = 5L,
-  feature_strategy = "VIP2D_intersect_VIP3Dmodel2",
+  feature_strategy = "VIP2D_intersect_M2",
   vip_thr = 99,
   threshold = 0.5,
   bootstrap_replicates = 2000L,
@@ -254,7 +254,7 @@ initialize_outputs <- function(data, folds, output_dir, config) {
     paste("GSE68310 data:", data_dir),
     paste("Primary analysis:", primary_dir),
     "Seasonal folds: regenerated within training year (seed 123)",
-    "H=1:10; Q2Y; VIP2D_intersect_VIP3Dmodel2; percentile=99",
+    "H=1:10; Q2Y; VIP2D_intersect_M2; percentile=99",
     "Input provenance: unknown"
   ), file.path(output_dir, "run_info.txt"))
   capture.output(sessionInfo(), file = file.path(output_dir, "sessionInfo.txt"))

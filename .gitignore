@@ -1,5 +1,12 @@
 .DS_Store
+._*
+__MACOSX/
 .Rhistory
 .RData
 .Rproj.user/
-outputs/
+
+/outputs/
+/enrichmentt/
+/benchmarks/
+/figures/
+/supplementary/results/

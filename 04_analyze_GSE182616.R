@@ -54,7 +54,7 @@ if (nzchar(reference_tensor) && file.exists(reference_tensor)) {
 
 seed <- 123L
 components <- 1:10
-strategy <- "VIP2D_intersect_VIP3Dmodel2"
+strategy <- "VIP2D_intersect_M2"
 threshold <- 99
 
 # Recover the original folds, checking the regenerated assignments.
@@ -118,7 +118,8 @@ if (nzchar(reference_cv) && file.exists(reference_cv)) {
 
 # Full-cohort interpretation is separate from held-out predictive assessment.
 development <- TensorPLS::tune_tensorpls_components(
-  X = X, Y = Y, ncomp = components, feature_strategy = "Original",
+  X = X, Y = Y, ncomp = components, feature_strategy = strategy,
+  vip_thr = threshold,
   cv_folds = 5L, folds = folds$outer, seed = seed,
   imputation = "training_mean", input_provenance = "unknown",
   selection_metric = "Q2Y", verbose = TRUE
