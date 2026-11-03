@@ -71,7 +71,7 @@ The scripts can also be read separately: [GSE68310 preparation](01_prepare_GSE68
 
 | Figure or table | What it shows | Script |
 | --- | --- | --- |
-| Figure 1 | TensorPLS workflow | Schematic; no R plotting script |
+| Figure 1 | TensorPLS workflow | [LaTeX/TikZ source](images/diagram.tex) |
 | Figure 2A–B | GSE68310 scores and temporal M2 profile | [GSE68310 panels](images/07_gse68310_panels_AB_paper.R) |
 | Figure 2C | Interferon and cell-cycle temporal M2 profiles | [Hallmark M2 comparison](supplementary/biological_interpretation/04_hallmark_IFN_cellcycle_M2.R) |
 | Figure 3A–B | GSE182616 scores and temporal M2 profile | [GSE182616 panels](images/08_gse182616_panels_AB_paper.R) |
